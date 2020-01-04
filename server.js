@@ -2,6 +2,7 @@ var config = require('./config.json');
 var WebSocket = require('ws');
 require('./fix');
 var Istrolid = require('./istrolid.js');
+const PORTN = process.env.PORT || 3000;
 
 const allowedCmds = ["playerJoin", "mouseMove", "playerSelected", "setRallyPoint", "buildRq", "stopOrder", "holdPositionOrder", "followOrder", "selfDestructOrder", "moveOrder", "configGame", "startGame", "addAi", "switchSide", "kickPlayer", "surrender"]
 
@@ -11,7 +12,7 @@ Sim.prototype.lastSimInterval = 0;
 
 global.Server = function() {
 
-    var wss = new WebSocket.Server({port: config.port});
+    var wss = new WebSocket.Server({port: PORTN});
     var root = null;
 
     var players = {};
