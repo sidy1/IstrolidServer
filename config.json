@@ -1,6 +1,6 @@
 {
     "name": "Sperat (sidy1)",
-    "port": 8080,
+    "port": 80,
     "addr": "localhost",
     "root_addr": "ws://198.199.109.223:88"
 }
