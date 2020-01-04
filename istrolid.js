@@ -3171,7 +3171,7 @@ zjson - binary json sirelizer with some strange features
   var DEBUG, _offset, _pos, _vel, isArray,
     bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  DEBUG = 1;
+  DEBUG = 0;
 
   window.VERSION = 50;
 
