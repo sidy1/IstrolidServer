@@ -3173,9 +3173,9 @@ zjson - binary json sirelizer with some strange features
 
   DEBUG = 1;
 
-  window.VERSION = 49;
+  window.VERSION = 50;
 
-  window.MINOR_VERSION = 1;
+  window.MINOR_VERSION = 3;
 
   _pos = v2.create();
 
