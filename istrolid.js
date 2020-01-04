@@ -8068,7 +8068,7 @@ General Game Objects live here
 
     Mount10Demi.prototype.desc = "A smaller narrow angle forward mount that grants a moderate flat range bonus.";
 
-    Mount10Demi.prototype.hp = 5;
+    Mount10Demi.prototype.hp = 2;
 
     Mount10Demi.prototype.cost = 7;
 
@@ -9840,7 +9840,7 @@ General Game Objects live here
 
     Reactor1x2.prototype.genEnergy = 25;
 
-    Reactor1x2.prototype.storeEnergy = 10000;
+    Reactor1x2.prototype.storeEnergy = 20000;
 
     Reactor1x2.prototype.image = "Reactor1x2.png";
 
@@ -9867,7 +9867,7 @@ General Game Objects live here
 
     Reactor2x1.prototype.genEnergy = 25;
 
-    Reactor2x1.prototype.storeEnergy = 10000;
+    Reactor2x1.prototype.storeEnergy = 20000;
 
     Reactor2x1.prototype.image = "Reactor2x1.png";
 
@@ -9894,7 +9894,7 @@ General Game Objects live here
 
     Reactor1x1.prototype.genEnergy = 10;
 
-    Reactor1x1.prototype.storeEnergy = 1600;
+    Reactor1x1.prototype.storeEnergy = 2000;
 
     Reactor1x1.prototype.image = "Reactor1x1.png";
 
@@ -10004,7 +10004,7 @@ General Game Objects live here
 
     EnergyTransfer.prototype.desc = "Gives energy to units in 800m range. Gives 960e per ship.";
 
-    EnergyTransfer.prototype.hp = 0;
+    EnergyTransfer.prototype.hp = 10;
 
     EnergyTransfer.prototype.cost = 30;
 
@@ -10253,7 +10253,7 @@ General Game Objects live here
 
     ShieldGen2x1.prototype.useEnergy = 18;
 
-    ShieldGen2x1.prototype.energyLine = .75;
+    ShieldGen2x1.prototype.energyLine = .40;
 
     ShieldGen2x1.prototype.shield = 15;
 
@@ -10280,7 +10280,7 @@ General Game Objects live here
 
     ShieldGen1x1.prototype.cost = 15;
 
-    ShieldGen1x1.prototype.mass = 10;
+    ShieldGen1x1.prototype.mass = 8;
 
     ShieldGen1x1.prototype.genShield = 0.0625 * 1.5;
 
@@ -10902,7 +10902,7 @@ General Game Objects live here
 
     JumpEngine.prototype.turnSpeed = 0;
 
-    JumpEngine.prototype.useEnergy = 1;
+    JumpEngine.prototype.useEnergy = 90;
 
     JumpEngine.prototype.exhaust = false;
 
@@ -11432,7 +11432,7 @@ General Game Objects live here
 
     TorpTurret.prototype.range = 1100;
 
-    TorpTurret.prototype.shotEnergy = 1300;
+    TorpTurret.prototype.shotEnergy = 1250;
 
     TorpTurret.prototype.mass = 10;
 
@@ -11597,7 +11597,7 @@ General Game Objects live here
 
     ArtilleryTurret.prototype.size = [2, 2];
 
-    ArtilleryTurret.prototype.reloadTime = 96;
+    ArtilleryTurret.prototype.reloadTime = 95.5;
 
     ArtilleryTurret.prototype.trackSpeed = 25;
 
@@ -11609,9 +11609,9 @@ General Game Objects live here
 
     ArtilleryTurret.prototype.minRange = 500;
 
-    ArtilleryTurret.prototype.shotEnergy = 5000;
+    ArtilleryTurret.prototype.shotEnergy = 4100;
 
-    ArtilleryTurret.prototype.mass = 70;
+    ArtilleryTurret.prototype.mass = 65;
 
     ArtilleryTurret.prototype.bulletSpeed = 6.5;
 
@@ -11735,7 +11735,7 @@ General Game Objects live here
 
     SidewinderTurret.prototype.bulletCls = types.SidewinderBullet;
 
-    SidewinderTurret.prototype.range = 740;
+    SidewinderTurret.prototype.range = 780;
 
     SidewinderTurret.prototype.shotEnergy = 2000;
 
@@ -12028,7 +12028,7 @@ General Game Objects live here
 
     HeavyBeamTurret.prototype.bulletCls = types.HeavyBeam;
 
-    HeavyBeamTurret.prototype.shotEnergy = 5200;
+    HeavyBeamTurret.prototype.shotEnergy = 5000;
 
     HeavyBeamTurret.prototype.instant = true;
 
@@ -12038,7 +12038,7 @@ General Game Objects live here
 
     HeavyBeamTurret.prototype.bulletSpeed = 2000;
 
-    HeavyBeamTurret.prototype.damage = 37;
+    HeavyBeamTurret.prototype.damage = 38;
 
     HeavyBeamTurret.prototype.maxLife = .5;
 
@@ -12947,7 +12947,7 @@ General Game Objects live here
 
     TeslaTurret.prototype.bounceRange = 540;
 
-    TeslaTurret.prototype.shotEnergy = 1500;
+    TeslaTurret.prototype.shotEnergy = 1600;
 
     TeslaTurret.prototype.mass = 40;
 
@@ -13048,7 +13048,7 @@ General Game Objects live here
 
     WavePullArch.prototype.direction = 1;
 
-    WavePullArch.prototype.waveEffect = 0.5;
+    WavePullArch.prototype.waveEffect = 0.55;
 
     WavePullArch.prototype.hitsMultiple = true;
 
@@ -13122,7 +13122,7 @@ General Game Objects live here
 
     WavePullTurret.prototype.bulletCls = types.WavePullArch;
 
-    WavePullTurret.prototype.range = 825;
+    WavePullTurret.prototype.range = 850;
 
     WavePullTurret.prototype.shotEnergy = 1200;
 
@@ -13153,7 +13153,7 @@ General Game Objects live here
 
     WavePushArch.prototype.maxRadius = 100;
 
-    WavePushArch.prototype.waveEffect = 0.5;
+    WavePushArch.prototype.waveEffect = 0.55;
 
     return WavePushArch;
 
@@ -13174,9 +13174,9 @@ General Game Objects live here
 
     WavePushTurret.prototype.bulletCls = types.WavePushArch;
 
-    WavePushTurret.prototype.range = 750;
+    WavePushTurret.prototype.range = 775;
 
-    WavePushTurret.prototype.damage = 4;
+    WavePushTurret.prototype.damage = 5;
 
     WavePushTurret.prototype.multiHit = true;
 
@@ -13344,7 +13344,7 @@ General Game Objects live here
 
     FlameTurret.prototype.bulletCls = types.FlameBullet;
 
-    FlameTurret.prototype.range = 350;
+    FlameTurret.prototype.range = 360;
 
     FlameTurret.prototype.shotEnergy = 400;
 
@@ -13952,9 +13952,9 @@ General Game Objects live here
 
     OverKillAi.prototype.desc = "Makes the adjacent turrets not shoot if it would kill an enemy twice in one shot.";
 
-    OverKillAi.prototype.cost = 5;
+    OverKillAi.prototype.cost = 1;
 
-    OverKillAi.prototype.hp = 5;
+    OverKillAi.prototype.hp = 4;
 
     OverKillAi.prototype.image = "OverKillAi.png";
 
