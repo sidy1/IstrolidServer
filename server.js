@@ -76,7 +76,7 @@ global.Server = function() {
         // Send server info
         let info = {
             name: config.name,
-            address: "ws://" + config.addr + ":" + PORTN,
+            address: "ws://" + "0.0.0.0" + ":" + process.env.PORT || 3000;,
             observers: sim.players.filter(p => p.connected).length,
             players: sim.players.filter(p => p.connected && !p.ai).map(p => { return {
                 name: p.name,
